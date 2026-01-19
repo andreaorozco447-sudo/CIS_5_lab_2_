@@ -23,7 +23,7 @@ int main() {
 	// minimum age
 	const int minAge = 8;
 
-	// minimum height in cm
+	// minimum height in meters
 	const double minHeight = 1.25;
 
 
