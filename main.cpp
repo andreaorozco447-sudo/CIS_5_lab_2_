@@ -30,19 +30,18 @@ int main() {
 
 	//check if user meets requirements to ride
 
-	if (age >= minAge && (height * 100) >= minHeight) 
-		std::cout << "Your are old enough and tall enough to ride" << endl;
+	if (age >= minAge && height >= minHeight)
+		cout << "You are old enough and tall enough to ride." << endl;
 
-	else if (age < minAge && (height * 100) < minHeight) 
-		std::cout << "Sorry, you are neither old enough nor tall enough to ride." << endl;
+	else if (age < minAge && height < minHeight)
+		cout << "Sorry, you are neither old enough nor tall enough to ride." << endl;
 
-	// age is the only condition not met
 	else if (age < minAge)
-		std::cout << "You are too young to ride." << endl;
+		cout << "You are too young to ride." << endl;
 
-	// height is the only condition not met
-	else if ((height * 100) < minHeight)
-		std::cout << "You are not tall enough to ride." << endl;
+	else
+		cout << "You are not tall enough to ride." << endl;
+
 
     return 0;
 }
